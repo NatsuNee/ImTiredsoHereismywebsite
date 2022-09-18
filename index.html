@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thach's Den</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <audio autoplay id="startup">
+        <source src="/assets/startup.mp3" type="audio/mp4">
+    </audio>
+
     <body scroll="no" style="overflow: hidden"></body>
     <tr>
         <td>
@@ -18,7 +21,8 @@
 </head>
     <body class="bodyimage">
         <img class="taskbar" src="/assets/bottom.png" alt="">
-        <img class="startbutton" src="/assets/StartButton.png" alt="">
-        <img class="startmenu" src="/assets/StartMenu.png" alt="">
+        <input type="image" src="/assets/StartButton.png" class="startbutton" onclick="togglestartmenu()"/>
+        <img class="startmenu" id="menu" src="/assets/StartMenu.png" alt="">
+        <script src="main.js"></script>
     </body>
 </html>
