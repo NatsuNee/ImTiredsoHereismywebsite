@@ -1,0 +1,43 @@
+.bodyimage{
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(assets/background.jpg);
+    background-size: cover;
+    top: 0%;
+    left: 0%;
+}
+
+.taskbar{
+    position:fixed;
+    width: 100%;
+    z-index: 0;
+    bottom: 0%;
+    left: 0%;
+}
+
+.bin{
+    position: relative;
+    margin: 5px;
+    width: 3.5%;
+    z-index: 0;
+    top: 0%;
+    left: 0%;
+}
+
+.startbutton{
+    margin: 0px 0px 3px 2px;
+    position:fixed;
+    width: 3.8%;
+    z-index: 0;
+    bottom: 0%;
+    left: 0%;
+}
+
+.startmenu{
+    margin: 0px 0px 29px 0px;
+    position:fixed;
+    width:13.5%;
+    z-index: 0;
+    bottom: 0%;
+    left: 0%;
+}
