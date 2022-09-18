@@ -11,4 +11,7 @@ function togglestartmenu(){
     }
 }
 
+window.onload = function(){
+    document.getElementById("startup").play()
+}
 startupsound.volume = 0.03;
