@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thach's Den</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <audio preload="auto" id="startup">
         <source src="/assets/startup.mp3">
     </audio>
@@ -22,7 +23,21 @@
     <body class="bodyimage">
         <img class="taskbar" src="/assets/bottom.png" alt="">
         <input type="image" src="/assets/StartButton.png" class="startbutton" onclick="togglestartmenu()"/>
-        <img class="startmenu" id="menu" src="/assets/StartMenu.png" alt="">
+        <tr>
+            <img class="startmenu" id="menuid" src="/assets/StartMenu.png" alt="">
+            <input type="image" id="programbuttonid" src="/assets/StartmenuProgramFolder.png" onclick="programbuttonfunc()" class="programbutton"/>
+            <input type="image" id="documentbuttonid" src="/assets/StartmenuDocuments.png" onclick="documentbuttonfunc()" class="documentbutton"/>
+            <input type="image" id="systembuttonid" src="/assets/StartmenuSystem.png" onclick="systempagefunc()" class="systembutton"/>
+        </tr>
+        <center>
+            <img class="programfolder" id="programfolderid" src="/assets/ProgramsFolder.png" alt="">
+            <input type="image" class="programfolderx" id="programfolderxid" src="/assets/SystemXButton.png" onclick="quitprogrambuttonfunc()" alt="">
+            <img class="documentfolder" id="documentfolderid" src="/assets/DocumentFolder.png" alt="">
+            <input type="image" class="documentfolderx" id="documentfolderxid" src="/assets/SystemXButton.png" onclick="quitdocumentbuttonfunc()" alt="">
+            <img class="systempage" id="systempageid" src="/assets/System.png" alt="">
+            <input type="image" class="systempagex" id="systempagexid" src="/assets/SystemXButton.png" onclick="quitsystempagefunc()" alt="">
+            <input type="image" class="systempageok" id="systempageokid" src="/assets/SystemOkButton.png" onclick="quitsystempagefunc()" alt="">
+         </center>
         <script src="main.js" type="text/javascript"></script>
     </body>
 </html>
