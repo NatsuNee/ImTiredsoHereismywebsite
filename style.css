@@ -115,9 +115,9 @@
 
 .systempageok{
     display: none;
-    top: 72.25%;
-    left: 52.9%;
-    position:absolute;
+    bottom: 3%;
+    left: 30%;
+    position:relative;
     width: 5.5%;
     z-index: 1;
     opacity: 90%;

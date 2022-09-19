@@ -38,8 +38,8 @@ function documentbuttonfunc(){
 function systempagefunc(){
     var systempage = document.getElementById("systempageid")
     var systempagex = document.getElementById("systempagexid")
-    var systempageok = document.getElementById("systempageokid")
-    systempageok.style.display = "block";
+    //var systempageok = document.getElementById("systempageokid") Fix this at some point
+    //systempageok.style.display = "block";
     systempagex.style.display = "block";
     systempage.style.display = "block";
 }
@@ -61,8 +61,8 @@ function quitdocumentbuttonfunc(){
 function quitsystempagefunc(){
     var systempage = document.getElementById("systempageid")
     var systempagex = document.getElementById("systempagexid")
-    var systempageok = document.getElementById("systempageokid")
-    systempageok.style.display = "none";
+    //var systempageok = document.getElementById("systempageokid") Fix this at some point
+    //systempageok.style.display = "none";
     systempagex.style.display = "none";
     systempage.style.display = "none";
 }
