@@ -84,8 +84,8 @@
 }
 
 .programfolder{
-    top: 18%;
-    left: 35%;
+    top: 30%;
+    left: 37%;
     position:absolute;
     width: 30%;
     z-index: 1;
@@ -94,8 +94,8 @@
 }
 
 .documentfolder{
-    top: 18%;
-    left: 35%;
+    top: 15%;
+    left: 5%;
     position:absolute;
     width: 30%;
     z-index: 1;
@@ -104,8 +104,8 @@
 }
 .systempage{
     display: none;
-    top: 18%;
-    left: 35%;
+    top: 27%;
+    left: 69%;
     position:absolute;
     width: 30%;
     z-index: 1;
@@ -114,8 +114,8 @@
 
 .systempagex{
     display: none;
-    top: 18.8%;
-    left: 63.45%;
+    top: 27.8%;
+    left: 97.4%;
     position:absolute;
     width: 1.15%;
     z-index: 1;
