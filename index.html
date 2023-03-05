@@ -33,24 +33,27 @@
         </td>
         <br />
         <td>
-            <a href=https://www.linkedin.com/in/StephenThach/> <img src="assets/Linkedin.png" class="youtube"> </a>
+            <a href=https://www.linkedin.com/in/StephenThach> <img src="assets/Linkedin.png" class="youtube"> </a>
         </td>
     </tr>
-</head>
+</head scroll = "no">
     <body class="bodyimage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <img class="taskbar" src="/assets/bottom.png" alt="">
         <input type="image" src="/assets/StartButton.png" class="startbutton" onclick="togglestartmenu()"/>
         <tr>
             <img class="startmenu" id="menuid" src="/assets/StartMenu.png" alt="">
-            <input type="image" id="programbuttonid" src="/assets/StartmenuProgramFolder.png" onclick="programbuttonfunc()" class="programbutton"/>
-            <input type="image" id="documentbuttonid" src="/assets/StartmenuDocuments.png" onclick="documentbuttonfunc()" class="documentbutton"/>
-            <input type="image" id="systembuttonid" src="/assets/StartmenuSystem.png" onclick="systempagefunc()" class="systembutton"/>
+            <input type="image" id="programbuttonid" src="/assets/StartmenuProgramFolder.png"  class="programbutton"/> <!--onclick="programbuttonfunc()"-->
+            <input type="image" id="documentbuttonid" src="/assets/StartmenuDocuments.png"  class="documentbutton"/> <!--onclick="documentbuttonfunc()"-->
+            <input type="image" id="systembuttonid" src="/assets/StartmenuSystem.png"  class="systembutton"/> <!--onclick="systempagefunc()"-->
         </tr>
         <tr>
-            <img class="programfolder" id="programfolderid" src="/assets/ProgramsFolder.png" alt="">
-            <input type="image" class="programfolderx" id="programfolderxid" src="/assets/SystemXButton.png" onclick="quitprogrambuttonfunc()" alt="">
+            <div class="modal" id="modal">
+                <img class="programfolder" id="programfolderid" src="/assets/ProgramsFolder.png" alt="">
+                <input type="image" class="programfolderx" id="programfolderxid" src="/assets/SystemXButton.png" onclick="quitprogrambuttonfunc()" alt="">
+            </div>
             <img class="documentfolder" id="documentfolderid" src="/assets/DocumentFolder.png" alt="">
-            <input type="image" class="documentfolderx" id="documentfolderxid" src="/assets/SystemXButton.png" onclick="quitdocumentbuttonfunc()" alt="">
+            <input type="image" class="documentfolderx" id="documentfolderxid" src="/assets/SystemXButton.png" onclick="quitdocumentbuttonfunc()" alt=""> 
             <img class="systempage" id="systempageid" src="/assets/System.png" alt="">
             <input type="image" class="systempagex" id="systempagexid" src="/assets/SystemXButton.png" onclick="quitsystempagefunc()" alt="">
             <!--<input type="image" class="systempageok" id="systempageokid" src="/assets/SystemOkButton.png" onclick="quitsystempagefunc()" alt=""> Fix this code by some point-->

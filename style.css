@@ -2,6 +2,9 @@
     width: 100%;
     z-index: -1;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     top: 0%;
     left: 0%;
@@ -18,8 +21,9 @@
 
 .bin{
     position: relative;
-    margin: 5px;
+    margin: 5px auto;
     width: 3.5%;
+    max-width: 30%;
     z-index: 0;
     top: 0%;
     left: 0%;
