@@ -1,74 +1,36 @@
-var startupsound = document.getElementById("startup")
+import * as THREE from 'three';
 
-function togglestartmenu(){
-    var startmenu = document.getElementById("menuid")
-    var documentbutton = document.getElementById("documentbuttonid")
-    var systembutton = document.getElementById("systembuttonid")
-    var programbutton = document.getElementById("programbuttonid")
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-    if (startmenu.style.display == "none"){
-        startmenu.style.display = "block";
-        programbutton.style.display = "block";
-        documentbutton.style.display = "block";
-        systembutton.style.display = "block";
-    }
-    
-    else{
-        startmenu.style.display = "none";
-        programbutton.style.display = "none";
-        documentbutton.style.display = "none";
-        systembutton.style.display = "none";
-    }
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 5;
+
+function animate() {
+	requestAnimationFrame( animate );
+
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.01;
+
+	renderer.render( scene, camera );
 }
 
-function programbuttonfunc(){
-    var programfolder = document.getElementById("programfolderid")
-    var programfolderx = document.getElementById("programfolderxid")
-    programfolder.style.display = "block";
-    programfolderx.style.display = "block";
-}
-
-function documentbuttonfunc(){
-    var documentfolderx = document.getElementById("documentfolderxid")
-    var documentfolder = document.getElementById("documentfolderid")
-    documentfolder.style.display = "block";
-    documentfolderx.style.display = "block";
-}
-
-function systempagefunc(){
-    var systempage = document.getElementById("systempageid")
-    var systempagex = document.getElementById("systempagexid")
-    //var systempageok = document.getElementById("systempageokid") Fix this at some point
-    //systempageok.style.display = "block";
-    systempagex.style.display = "block";
-    systempage.style.display = "block";
-}
-
-function quitprogrambuttonfunc(){
-    var programfolder = document.getElementById("programfolderid")
-    var programfolderx = document.getElementById("programfolderxid")
-    programfolder.style.display = "none";
-    programfolderx.style.display = "none";
-}
-
-function quitdocumentbuttonfunc(){
-    var documentfolderx = document.getElementById("documentfolderxid")
-    var documentfolder = document.getElementById("documentfolderid")
-    documentfolder.style.display = "none";
-    documentfolderx.style.display = "none";
-}
-
-function quitsystempagefunc(){
-    var systempage = document.getElementById("systempageid")
-    var systempagex = document.getElementById("systempagexid")
-    //var systempageok = document.getElementById("systempageokid") Fix this at some point
-    //systempageok.style.display = "none";
-    systempagex.style.display = "none";
-    systempage.style.display = "none";
-}
+animate();
 
 
-window.onload = function(){
-    document.getElementById("startup").play()
-}
-startupsound.volume = 0.03;
+
+let time = document.getElementById("current-time");
+
+setInterval(() =>{
+    let d = new Date
+    time.innerHTML = d.toLocaleTimeString();
+},1000)
+

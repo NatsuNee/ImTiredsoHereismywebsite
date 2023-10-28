@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    
 }
 
+.navbar{
+    max-height: 40px;
+}
+
+.ontopoverwrite{
+    z-index: 99;
+}
